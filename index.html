@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Reaktiopeli</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="fireworks.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="glow">REAKTIOPELI</h1>
+  </header>
+
+  <main>
+    <div id="tulos-container">
+      <div class="pisteet">Pisteet: <span id="tulos">0</span></div>
+      <div class="pisteet">Ennatys: <span id="ennatysLukema"></span></span></div>
+    </div>
+    <div id="nappula-container">
+      <section class="stage noSelect">
+        <figure class="nappula ball" id="nappula0"><span class="shadow"></span></figure>
+      </section>
+      <section class="stage">
+        <figure class="nappula ball noSelect" id="nappula1"><span class="shadow"></span></figure>
+      </section>
+      <section class="stage">
+        <figure class="nappula ball noSelect" id="nappula2"><span class="shadow"></span></figure>
+      </section>
+      <section class="stage">
+        <figure class="nappula ball noSelect" id="nappula3"><span class="shadow"></span></figure>
+      </section>
+    </div>
+
+    <div id="overlay">
+      <div id="gameover">
+        <div id="gameoverText">
+        </div>
+        <div id="restartButton">Pelaa uudelleen</div>
+      </div>
+    </div>
+
+    <div class="ilotulitus" id="ilotulitus">
+      <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+      </div>
+    </div>
+
+  </main>
+  <script src="reaktio.js"></script>
+</body>
+
+</html>
